@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.body {
+    background: url('bg.jpg') no-repeat center /cover;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#board {
+    background: linear-gradient(#a2efa2, #ffff8c);
+    width: 90vmin;
+    height: 90vmin;
+    /* width: 90vmax;
+    height: 90vmax; */
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    /* grid-gap: 1fr; */
+}
+
+/* .head {
+    background: red;
+    border: 2px solid purple;
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+
+.food {
+    background:blue;
+     background-color: violet
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 8px;
+
+
+}
+
+.snake {
+    background-color: purple;
+    border: .25vmin solid rgb(230, 25, 25);
+    border-radius: 12px;
+}  */
+
+/* harry */
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+} 
+#scorebox{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bolds;
+    color: yellow;
+    font-family: 'New Tegomin'
+}
+#hiscorebox{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bolds;
+    color: yellow;
+    font-family: 'New Tegomin'
+}
